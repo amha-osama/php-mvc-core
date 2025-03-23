@@ -1,0 +1,14 @@
+{
+    "name": "osama/php-mvc-core",
+    "autoload": {
+        "psr-4": {
+            "Osama\\phpmvc\\": "."
+        }
+    },
+    "authors": [
+        {
+            "name": "osama"
+        }
+    ],
+    "require": {}
+}
