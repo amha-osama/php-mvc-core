@@ -24,7 +24,7 @@ class View
       try {
         extract($params);
         ob_start();
-        require_once dirname(__DIR__) . "/view/layout/$template.php";
+        require_once Application::$app->DIR . "/src/view/layout/$template.php";
         return ob_get_clean();
       } catch (\Exception $e) {
         throw new \Exception("Failed to render layout: {$template}. Error: " . $e->getMessage());
@@ -36,7 +36,7 @@ class View
       try {
           extract($params);
           ob_start();
-          require_once dirname(__DIR__) . "/view/$template.php";
+          require_once Application::$app->DIR . "/src/view/$template.php";
           return ob_get_clean();
       } catch (\Exception $e) {
           throw new \Exception("Failed to render main layout: {$template}. Error: " . $e->getMessage());
