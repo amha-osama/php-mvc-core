@@ -1,5 +1,5 @@
 {
-    "name": "osama/php-mvc-core",
+    "name": "amha/php-mvc-core",
     "autoload": {
         "psr-4": {
             "Osama\\phpmvc\\": "."
